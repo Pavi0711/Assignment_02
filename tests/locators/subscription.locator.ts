@@ -148,10 +148,10 @@ dashboard: { role: "link", name: "Dashboard" } as RoleLocator,
   },
 };
 
-export function getLocator(page: Page, locator: RoleLocator | string): Locator {
-  if (typeof locator === "string") {
-    return page.locator(locator);
-  }
-  const { role, name, exact } = locator;
-  return page.getByRole(role, { name, exact });
-}
+// export function getLocator(page: Page, locator: RoleLocator | string): Locator {
+//   if (typeof locator === "string") {
+//     return page.locator(locator);
+//   }
+//   const { role, name, exact } = locator;
+//   return page.getByRole(role, { name, exact });
+// }
