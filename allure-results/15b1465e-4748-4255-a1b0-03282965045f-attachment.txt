@@ -1,0 +1,7 @@
+product count: 5
+Product names:
+- Floral Maxi Dress
+- Classic Leather Loafers
+- Denim Skinny Jeans
+- Striped Cotton Sweater
+- iPhone 16 Pro

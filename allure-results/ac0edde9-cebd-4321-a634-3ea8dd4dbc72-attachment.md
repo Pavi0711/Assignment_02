@@ -1,0 +1,94 @@
+# Page snapshot
+
+```yaml
+- link "EVERSHOP":
+  - /url: http://localhost:3000/admin
+  - img
+  - text: EVERSHOP
+- img
+- textbox "Search"
+- link "A":
+  - /url: "#"
+- list:
+  - listitem:
+    - text: Quick links
+    - list:
+      - listitem:
+        - link "Dashboard":
+          - /url: http://localhost:3000/admin
+      - listitem:
+        - link "New Product":
+          - /url: http://localhost:3000/admin/products/new
+      - listitem:
+        - link "New Coupon":
+          - /url: http://localhost:3000/admin/coupon/new
+  - listitem:
+    - text: Catalog
+    - list:
+      - listitem:
+        - link "Products":
+          - /url: http://localhost:3000/admin/products
+      - listitem:
+        - link "Categories":
+          - /url: http://localhost:3000/admin/categories
+      - listitem:
+        - link "Collections":
+          - /url: http://localhost:3000/admin/collections
+      - listitem:
+        - link "Attributes":
+          - /url: http://localhost:3000/admin/attributes
+  - listitem:
+    - text: Sale
+    - list:
+      - listitem:
+        - link "Orders":
+          - /url: http://localhost:3000/admin/orders
+  - listitem:
+    - text: Customer
+    - list:
+      - listitem:
+        - link "Customers":
+          - /url: http://localhost:3000/admin/customers
+  - listitem:
+    - text: Promotion
+    - list:
+      - listitem:
+        - link "Coupons":
+          - /url: http://localhost:3000/admin/coupons
+  - listitem:
+    - text: CMS
+    - list:
+      - listitem:
+        - link "Pages":
+          - /url: http://localhost:3000/admin/pages
+      - listitem:
+        - link "Widgets":
+          - /url: http://localhost:3000/admin/widgets
+  - listitem:
+    - link "Setting":
+      - /url: http://localhost:3000/admin/setting/store
+    - list
+- heading "Dashboard" [level=1]
+- heading "Sale Statistics" [level=2]
+- link "Daily":
+  - /url: "#"
+- link "Weekly":
+  - /url: "#"
+- link "Monthly":
+  - /url: "#"
+- img: May 31 Jun 30 Jul 31 Aug 31 Sep 30 Oct 31 0 1 2 3 4
+- heading "Best Sellers" [level=2]
+- link "All products":
+  - /url: "#"
+- table:
+  - rowgroup:
+    - row "Look like you just started. No bestsellers yet.":
+      - cell "Look like you just started. No bestsellers yet."
+      - cell
+- heading "Lifetime Sales" [level=2]
+- text: 0 orders $0.00 lifetime sale 0% of orders completed 0% of orders cancelled
+- img:
+  - img
+  - text: 0 0 100
+- text: © 2022 Evershop. All Rights Reserved. Version 2.0.1
+```

@@ -1,0 +1,123 @@
+Verifying product in database: UpdatedProduct1760706070680407
+Connected to PostgreSQL database
+Discovering database schema...
+Product-related tables: [
+  { table_name: 'product_custom_option' },
+  { table_name: 'product_custom_option_value' },
+  { table_name: 'product_description' },
+  { table_name: 'product_image' },
+  { table_name: 'product_attribute_value_index' },
+  { table_name: 'product_collection' },
+  { table_name: 'product' },
+  { table_name: 'product_inventory' }
+]
+Table: product_custom_option [
+  { column_name: 'product_custom_option_id', data_type: 'integer' },
+  { column_name: 'uuid', data_type: 'uuid' },
+  {
+    column_name: 'product_custom_option_product_id',
+    data_type: 'integer'
+  },
+  { column_name: 'option_name', data_type: 'character varying' },
+  { column_name: 'option_type', data_type: 'character varying' },
+  { column_name: 'is_required', data_type: 'boolean' },
+  { column_name: 'sort_order', data_type: 'integer' }
+]
+Table: product_custom_option_value [
+  {
+    column_name: 'product_custom_option_value_id',
+    data_type: 'integer'
+  },
+  { column_name: 'uuid', data_type: 'uuid' },
+  { column_name: 'option_id', data_type: 'integer' },
+  { column_name: 'extra_price', data_type: 'numeric' },
+  { column_name: 'sort_order', data_type: 'integer' },
+  { column_name: 'value', data_type: 'character varying' }
+]
+Table: product_description [
+  { column_name: 'product_description_id', data_type: 'integer' },
+  {
+    column_name: 'product_description_product_id',
+    data_type: 'integer'
+  },
+  { column_name: 'name', data_type: 'character varying' },
+  { column_name: 'description', data_type: 'text' },
+  { column_name: 'short_description', data_type: 'text' },
+  { column_name: 'url_key', data_type: 'character varying' },
+  { column_name: 'meta_title', data_type: 'text' },
+  { column_name: 'meta_description', data_type: 'text' },
+  { column_name: 'meta_keywords', data_type: 'text' }
+]
+Table: product_image [
+  { column_name: 'product_image_id', data_type: 'integer' },
+  { column_name: 'product_image_product_id', data_type: 'integer' },
+  { column_name: 'origin_image', data_type: 'character varying' },
+  { column_name: 'thumb_image', data_type: 'text' },
+  { column_name: 'listing_image', data_type: 'text' },
+  { column_name: 'single_image', data_type: 'text' },
+  { column_name: 'is_main', data_type: 'boolean' }
+]
+Table: product_attribute_value_index [
+  {
+    column_name: 'product_attribute_value_index_id',
+    data_type: 'integer'
+  },
+  { column_name: 'product_id', data_type: 'integer' },
+  { column_name: 'attribute_id', data_type: 'integer' },
+  { column_name: 'option_id', data_type: 'integer' },
+  { column_name: 'option_text', data_type: 'text' }
+]
+Table: product_collection [
+  { column_name: 'product_collection_id', data_type: 'integer' },
+  { column_name: 'collection_id', data_type: 'integer' },
+  { column_name: 'product_id', data_type: 'integer' }
+]
+Table: product [
+  { column_name: 'product_id', data_type: 'integer' },
+  { column_name: 'uuid', data_type: 'uuid' },
+  { column_name: 'type', data_type: 'character varying' },
+  { column_name: 'variant_group_id', data_type: 'integer' },
+  { column_name: 'visibility', data_type: 'boolean' },
+  { column_name: 'group_id', data_type: 'integer' },
+  { column_name: 'sku', data_type: 'character varying' },
+  { column_name: 'price', data_type: 'numeric' },
+  { column_name: 'weight', data_type: 'numeric' },
+  { column_name: 'tax_class', data_type: 'smallint' },
+  { column_name: 'status', data_type: 'boolean' },
+  { column_name: 'created_at', data_type: 'timestamp with time zone' },
+  { column_name: 'updated_at', data_type: 'timestamp with time zone' },
+  { column_name: 'category_id', data_type: 'integer' }
+]
+Table: product_inventory [
+  { column_name: 'product_inventory_id', data_type: 'integer' },
+  { column_name: 'product_inventory_product_id', data_type: 'integer' },
+  { column_name: 'qty', data_type: 'integer' },
+  { column_name: 'manage_stock', data_type: 'boolean' },
+  { column_name: 'stock_availability', data_type: 'boolean' }
+]
+Trying query: 
+      SELECT pd.name, p.price, p.sku 
+      FROM public.product_description pd 
+      JOIN public.product p ON pd.product_id = p.product_id 
+      WHERE pd.name = $1
+      
+Query failed, trying next one...
+Trying query: 
+      SELECT name, price, sku FROM public.product_description WHERE name = $1
+      
+Query failed, trying next one...
+Trying query: 
+      SELECT name, price, sku FROM public.products WHERE name = $1
+      
+Query failed, trying next one...
+Trying query: 
+      SELECT name, cost, sku FROM public.product_description WHERE name = $1
+      
+Query failed, trying next one...
+Trying query: 
+      SELECT name FROM public.product_description WHERE name = $1
+      
+✅ Query succeeded! Found product: { name: 'UpdatedProduct1760706070680407' }
+✅ Database verification completed successfully
+Product details from database: { name: 'UpdatedProduct1760706070680407' }
+Database connection closed

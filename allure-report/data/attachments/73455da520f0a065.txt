@@ -1,0 +1,128 @@
+Database query error: error: column "price" does not exist
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at DBConnection.execute (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\utils\dbConnection.ts:27:22)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\tests\productCRUD.spec.ts:98:20
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:304:9
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:289:11
+    at TimeoutManager.withRunnable (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:287:7)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:302:7
+    at WorkerMain._runTest (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:277:5)
+    at WorkerMain.runTestGroup (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:193:11)
+    at process.<anonymous> (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 105,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '14',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+Query: SELECT name, price, category FROM public.product_description WHERE name = $1
+Params: [ 'UpdatedProduct1760705768599520' ]
+Database verification failed: error: column "price" does not exist
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at DBConnection.execute (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\utils\dbConnection.ts:27:22)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\tests\productCRUD.spec.ts:98:20
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:304:9
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:289:11
+    at TimeoutManager.withRunnable (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:287:7)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:302:7
+    at WorkerMain._runTest (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:277:5)
+    at WorkerMain.runTestGroup (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:193:11)
+    at process.<anonymous> (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 105,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '14',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+Database query error: error: column "price" does not exist
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at DBConnection.execute (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\utils\dbConnection.ts:27:22)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\tests\productCRUD.spec.ts:124:28
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:304:9
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:289:11
+    at TimeoutManager.withRunnable (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:287:7)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:302:7
+    at WorkerMain._runTest (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:277:5)
+    at WorkerMain.runTestGroup (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:193:11)
+    at process.<anonymous> (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 105,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '14',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+Query: SELECT name, price, category FROM public.product_description LIMIT 5
+Params: []
+Debug queries failed: error: column "price" does not exist
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at DBConnection.execute (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\utils\dbConnection.ts:27:22)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\tests\productCRUD.spec.ts:124:28
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:304:9
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:289:11
+    at TimeoutManager.withRunnable (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\testInfo.js:287:7)
+    at C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:302:7
+    at WorkerMain._runTest (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:277:5)
+    at WorkerMain.runTestGroup (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\worker\workerMain.js:193:11)
+    at process.<anonymous> (C:\Users\GajananVilasBhange\Gajanan-Eversop-Assignment-02\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 105,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '14',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}

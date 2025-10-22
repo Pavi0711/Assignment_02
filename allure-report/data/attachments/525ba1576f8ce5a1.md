@@ -1,0 +1,308 @@
+# Page snapshot
+
+```yaml
+- link "EVERSHOP":
+  - /url: http://localhost:3000/admin
+  - img
+  - text: EVERSHOP
+- img
+- textbox "Search"
+- link "A":
+  - /url: "#"
+- list:
+  - listitem:
+    - text: Quick links
+    - list:
+      - listitem:
+        - link "Dashboard":
+          - /url: http://localhost:3000/admin
+      - listitem:
+        - link "New Product":
+          - /url: http://localhost:3000/admin/products/new
+      - listitem:
+        - link "New Coupon":
+          - /url: http://localhost:3000/admin/coupon/new
+  - listitem:
+    - text: Catalog
+    - list:
+      - listitem:
+        - link "Products":
+          - /url: http://localhost:3000/admin/products
+      - listitem:
+        - link "Categories":
+          - /url: http://localhost:3000/admin/categories
+      - listitem:
+        - link "Collections":
+          - /url: http://localhost:3000/admin/collections
+      - listitem:
+        - link "Attributes":
+          - /url: http://localhost:3000/admin/attributes
+  - listitem:
+    - text: Sale
+    - list:
+      - listitem:
+        - link "Orders":
+          - /url: http://localhost:3000/admin/orders
+  - listitem:
+    - text: Customer
+    - list:
+      - listitem:
+        - link "Customers":
+          - /url: http://localhost:3000/admin/customers
+  - listitem:
+    - text: Promotion
+    - list:
+      - listitem:
+        - link "Coupons":
+          - /url: http://localhost:3000/admin/coupons
+  - listitem:
+    - text: CMS
+    - list:
+      - listitem:
+        - link "Pages":
+          - /url: http://localhost:3000/admin/pages
+      - listitem:
+        - link "Widgets":
+          - /url: http://localhost:3000/admin/widgets
+  - listitem:
+    - link "Setting":
+      - /url: http://localhost:3000/admin/setting/store
+    - list
+- heading "Products" [level=1]
+- link "New Product":
+  - /url: http://localhost:3000/admin/products/new
+- heading "Status Product type" [level=3]:
+  - textbox "Search"
+  - button "Status":
+    - text: Status
+    - img
+  - button "Product type":
+    - text: Product type
+    - img
+- link "Clear filter":
+  - /url: "#"
+- table:
+  - rowgroup:
+    - row "Thumbnail Name Price SKU Stock Status":
+      - cell:
+        - checkbox
+      - cell "Thumbnail"
+      - cell "Name":
+        - text: Name
+        - button:
+          - img
+      - cell "Price":
+        - text: Price
+        - button:
+          - img
+      - cell "SKU"
+      - cell "Stock":
+        - text: Stock
+        - button:
+          - img
+      - cell "Status":
+        - text: Status
+        - button:
+          - img
+  - rowgroup:
+    - row
+    - row "TestProduct1760947908741 $999.00 TP1760947908741 50":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "TestProduct1760947908741":
+        - link "TestProduct1760947908741":
+          - /url: /admin/products/edit/b2c054cb-3020-4e7d-a748-519345617e91
+      - cell "$999.00"
+      - cell "TP1760947908741"
+      - cell "50"
+      - cell
+    - row "UpdatedProduct1760706070680407 UpdatedProduct1760706070680407 $999.00 TP1760706070680 50":
+      - cell:
+        - checkbox
+      - cell "UpdatedProduct1760706070680407":
+        - img "UpdatedProduct1760706070680407"
+      - cell "UpdatedProduct1760706070680407":
+        - link "UpdatedProduct1760706070680407":
+          - /url: /admin/products/edit/e13a6cad-0503-468d-b792-86a6d4f5bb9a
+      - cell "$999.00"
+      - cell "TP1760706070680"
+      - cell "50"
+      - cell
+    - row "UpdatedProduct1760705768599520 UpdatedProduct1760705768599520 $999.00 TP1760705768599 50":
+      - cell:
+        - checkbox
+      - cell "UpdatedProduct1760705768599520":
+        - img "UpdatedProduct1760705768599520"
+      - cell "UpdatedProduct1760705768599520":
+        - link "UpdatedProduct1760705768599520":
+          - /url: /admin/products/edit/8aa6af75-9edf-4a5e-8970-79d04e4f960d
+      - cell "$999.00"
+      - cell "TP1760705768599"
+      - cell "50"
+      - cell
+    - row "UpdatedProduct1760705580833372 UpdatedProduct1760705580833372 $999.00 TP1760705580833 50":
+      - cell:
+        - checkbox
+      - cell "UpdatedProduct1760705580833372":
+        - img "UpdatedProduct1760705580833372"
+      - cell "UpdatedProduct1760705580833372":
+        - link "UpdatedProduct1760705580833372":
+          - /url: /admin/products/edit/604cf235-0fd4-4547-86c3-49faeaadf910
+      - cell "$999.00"
+      - cell "TP1760705580833"
+      - cell "50"
+      - cell
+    - row "UpdatedProduct176070486242917 UpdatedProduct176070486242917 $999.00 TP1760704862429 50":
+      - cell:
+        - checkbox
+      - cell "UpdatedProduct176070486242917":
+        - img "UpdatedProduct176070486242917"
+      - cell "UpdatedProduct176070486242917":
+        - link "UpdatedProduct176070486242917":
+          - /url: /admin/products/edit/1e7acb6f-93af-43e1-a750-4fd84688ed20
+      - cell "$999.00"
+      - cell "TP1760704862429"
+      - cell "50"
+      - cell
+    - row "TestProduct1760704802786 TestProduct1760704802786 $999.00 TP1760704802786 50":
+      - cell:
+        - checkbox
+      - cell "TestProduct1760704802786":
+        - img "TestProduct1760704802786"
+      - cell "TestProduct1760704802786":
+        - link "TestProduct1760704802786":
+          - /url: /admin/products/edit/279b49fc-7cf0-4e31-8aee-6463640ecc2e
+      - cell "$999.00"
+      - cell "TP1760704802786"
+      - cell "50"
+      - cell
+    - row "TestProduct1760704636208 TestProduct1760704636208 $999.00 TP1760704636208 50":
+      - cell:
+        - checkbox
+      - cell "TestProduct1760704636208":
+        - img "TestProduct1760704636208"
+      - cell "TestProduct1760704636208":
+        - link "TestProduct1760704636208":
+          - /url: /admin/products/edit/b3d0db9d-531c-4dc5-9323-984ab8d8bdd8
+      - cell "$999.00"
+      - cell "TP1760704636208"
+      - cell "50"
+      - cell
+    - row "TestProduct1760703762986 TestProduct1760703762986 $130.37 TP1760703762986 50":
+      - cell:
+        - checkbox
+      - cell "TestProduct1760703762986":
+        - img "TestProduct1760703762986"
+      - cell "TestProduct1760703762986":
+        - link "TestProduct1760703762986":
+          - /url: /admin/products/edit/ef91634d-d7a5-4016-8332-641dc677b31a
+      - cell "$130.37"
+      - cell "TP1760703762986"
+      - cell "50"
+      - cell
+    - row "TestProduct1760703564992 TestProduct1760703564992 $461.51 TP1760703564992 50":
+      - cell:
+        - checkbox
+      - cell "TestProduct1760703564992":
+        - img "TestProduct1760703564992"
+      - cell "TestProduct1760703564992":
+        - link "TestProduct1760703564992":
+          - /url: /admin/products/edit/e0c0fe3a-6488-4b19-bd7d-5d1520e1d66f
+      - cell "$461.51"
+      - cell "TP1760703564992"
+      - cell "50"
+      - cell
+    - row "TestProduct1760703294354 TestProduct1760703294354 $753.36 TP1760703294354 50":
+      - cell:
+        - checkbox
+      - cell "TestProduct1760703294354":
+        - img "TestProduct1760703294354"
+      - cell "TestProduct1760703294354":
+        - link "TestProduct1760703294354":
+          - /url: /admin/products/edit/4048e0dc-ca49-4bb8-9495-f7218086f46e
+      - cell "$753.36"
+      - cell "TP1760703294354"
+      - cell "50"
+      - cell
+    - row "TestProduct888 TestProduct888 $999.00 TP088 50":
+      - cell:
+        - checkbox
+      - cell "TestProduct888":
+        - img "TestProduct888"
+      - cell "TestProduct888":
+        - link "TestProduct888":
+          - /url: /admin/products/edit/6fcbb31b-1f5b-4c21-9a3a-57391dbd34c9
+      - cell "$999.00"
+      - cell "TP088"
+      - cell "50"
+      - cell
+    - row "iPhone 16 Pro iPhone 16 Pro $1,199.00 IPH16PRO123 50":
+      - cell:
+        - checkbox
+      - cell "iPhone 16 Pro":
+        - img "iPhone 16 Pro"
+      - cell "iPhone 16 Pro":
+        - link "iPhone 16 Pro":
+          - /url: /admin/products/edit/8b13be22-17bb-47f4-992d-b1a07d72c879
+      - cell "$1,199.00"
+      - cell "IPH16PRO123"
+      - cell "50"
+      - cell
+    - row "Striped Cotton Sweater $90.00 SCS-24680 150":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Striped Cotton Sweater":
+        - link "Striped Cotton Sweater":
+          - /url: /admin/products/edit/953b4978-7b7f-4ae0-867b-264aacd690da
+      - cell "$90.00"
+      - cell "SCS-24680"
+      - cell "150"
+      - cell
+    - row "Denim Skinny Jeans $120.00 DSJ-54321 90":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Denim Skinny Jeans":
+        - link "Denim Skinny Jeans":
+          - /url: /admin/products/edit/4e5ca28e-8ca1-4a53-8321-a728b90471f7
+      - cell "$120.00"
+      - cell "DSJ-54321"
+      - cell "90"
+      - cell
+    - row "Classic Leather Loafers $120.00 CLL-98765 120":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Classic Leather Loafers":
+        - link "Classic Leather Loafers":
+          - /url: /admin/products/edit/7c7d3986-bfa6-4343-8f0f-5f62fb253083
+      - cell "$120.00"
+      - cell "CLL-98765"
+      - cell "120"
+      - cell
+    - row "Floral Maxi Dress $100.00 FMD-12345 100":
+      - cell:
+        - checkbox
+      - cell:
+        - img
+      - cell "Floral Maxi Dress":
+        - link "Floral Maxi Dress":
+          - /url: /admin/products/edit/1d34aa2c-26c6-46e2-bbdd-6abf4b108f06
+      - cell "$100.00"
+      - cell "FMD-12345"
+      - cell "100"
+      - cell
+- text: Show
+- textbox: "20"
+- text: per page
+- combobox:
+  - option "1" [disabled] [selected]
+  - option "1"
+- text: 16 records © 2022 Evershop. All Rights Reserved. Version 2.0.1
+```

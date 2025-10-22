@@ -1,0 +1,2 @@
+Creating product: TestProduct1760947908741
+Will update to: UpdatedProduct1760947908741187

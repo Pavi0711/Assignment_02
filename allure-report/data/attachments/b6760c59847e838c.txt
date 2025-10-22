@@ -1,0 +1,13 @@
+Verifying product in database: UpdatedProduct1760705768599520
+Connected to PostgreSQL database
+Available product tables: [
+  { table_name: 'product_custom_option' },
+  { table_name: 'product_custom_option_value' },
+  { table_name: 'product_description' },
+  { table_name: 'product_image' },
+  { table_name: 'product_attribute_value_index' },
+  { table_name: 'product_collection' },
+  { table_name: 'product' },
+  { table_name: 'product_inventory' }
+]
+Database connection closed

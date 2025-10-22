@@ -1,0 +1,170 @@
+# Page snapshot
+
+```yaml
+- link "EVERSHOP":
+  - /url: http://localhost:3000/admin
+  - img
+  - text: EVERSHOP
+- img
+- textbox "Search"
+- link "A":
+  - /url: "#"
+- list:
+  - listitem:
+    - text: Quick links
+    - list:
+      - listitem:
+        - link "Dashboard":
+          - /url: http://localhost:3000/admin
+      - listitem:
+        - link "New Product":
+          - /url: http://localhost:3000/admin/products/new
+      - listitem:
+        - link "New Coupon":
+          - /url: http://localhost:3000/admin/coupon/new
+  - listitem:
+    - text: Catalog
+    - list:
+      - listitem:
+        - link "Products":
+          - /url: http://localhost:3000/admin/products
+      - listitem:
+        - link "Categories":
+          - /url: http://localhost:3000/admin/categories
+      - listitem:
+        - link "Collections":
+          - /url: http://localhost:3000/admin/collections
+      - listitem:
+        - link "Attributes":
+          - /url: http://localhost:3000/admin/attributes
+  - listitem:
+    - text: Sale
+    - list:
+      - listitem:
+        - link "Orders":
+          - /url: http://localhost:3000/admin/orders
+  - listitem:
+    - text: Customer
+    - list:
+      - listitem:
+        - link "Customers":
+          - /url: http://localhost:3000/admin/customers
+  - listitem:
+    - text: Promotion
+    - list:
+      - listitem:
+        - link "Coupons":
+          - /url: http://localhost:3000/admin/coupons
+  - listitem:
+    - text: CMS
+    - list:
+      - listitem:
+        - link "Pages":
+          - /url: http://localhost:3000/admin/pages
+      - listitem:
+        - link "Widgets":
+          - /url: http://localhost:3000/admin/widgets
+  - listitem:
+    - link "Setting":
+      - /url: http://localhost:3000/admin/setting/store
+    - list
+- link:
+  - /url: http://localhost:3000/admin/products
+- heading "Create a new product" [level=1]
+- heading "General" [level=2]
+- text: Name
+- textbox "Name": iPhone 16 MAX Pro
+- text: SKU
+- textbox "SKU": IPH16PRO123
+- text: Price
+- textbox "Price": "150000"
+- text: USD Weight
+- textbox "Weight": "0.30"
+- text: kg Category Men
+- link "Change":
+  - /url: "#"
+- link "Unassign":
+  - /url: "#"
+- text: Tax class
+- combobox "Tax class":
+  - option "None" [selected]
+  - option "Taxable Goods"
+- text: Description
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- link:
+  - /url: "#"
+- heading "Media" [level=2]
+- img
+- img
+- heading "Search engine optimize" [level=2]
+- text: Url key
+- textbox: iphone-16-pro
+- text: Meta title
+- textbox: Apple iPhone 16 Pro
+- text: Meta keywords
+- textbox: iPhone, Apple, Smartphone
+- text: Meta description
+- textbox "Meta description": Latest Apple iPhone 16 Pro with advanced features.
+- heading "Product status" [level=2]
+- text: Status
+- radio "Disabled"
+- text: Disabled
+- radio "Enabled" [checked]
+- text: Enabled Visibility
+- radio "Not visible"
+- text: Not visible
+- radio "Visible" [checked]
+- text: Visible
+- heading "Inventory" [level=2]
+- text: Manage stock?
+- radio "No"
+- text: "No"
+- radio "Yes" [checked]
+- text: Yes Stock availability
+- radio "No"
+- text: "No"
+- radio "Yes" [checked]
+- text: Yes Quantity
+- textbox "Quantity": "50"
+- heading "Attribute group" [level=3]
+- combobox:
+  - option "Please select" [disabled]
+  - option "Default" [selected]
+- heading "Attributes" [level=3]
+- table:
+  - rowgroup:
+    - row "Color White":
+      - cell "Color"
+      - cell "White":
+        - combobox:
+          - option "Please select" [disabled]
+          - option "White" [selected]
+          - option "Black"
+          - option "Yellow"
+    - row "Size XXL":
+      - cell "Size"
+      - cell "XXL":
+        - combobox:
+          - option "Please select" [disabled]
+          - option "XXL" [selected]
+          - option "XL"
+          - option "SM"
+- button "Cancel"
+- button "Save"
+- text: © 2022 Evershop. All Rights Reserved. Version 2.0.1
+- alert: "Exception in middleware createProduct: duplicate key value violates unique constraint \"PRODUCT_SKU_UNIQUE\""
+- button "close"
+```
